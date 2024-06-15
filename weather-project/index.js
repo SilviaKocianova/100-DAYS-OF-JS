@@ -7,7 +7,7 @@ const error404 = document.querySelector('.not-found');
 // The addEventListener method is used to attach an event listener to an element,
 // which allows the element to "listen" for the specified event and run the associated function when the event is detected.
 search.addEventListener('click', () => {
-    const APIKey = '728b0ee6df5687559812bd3169ad77b7';
+    const APIKey = '56f3b815225fb1219ecc54496b8dd078';
     // .search: The dot indicates that you are looking for an element with the class name search-box input.
     const city = document.querySelector('.search-box input').value;
 
@@ -35,8 +35,8 @@ search.addEventListener('click', () => {
             const image = document.querySelector('.weather-box img');
             const temperature = document.querySelector('.weather-box .temperature');
             const description = document.querySelector('.weather-box .description');
-            const humidity = document.querySelector('.weather-box .humidity span');
-            const wind = document.querySelector('.weather-box .wind span');
+            const humidity = document.querySelector('.weather-details .humidity span');
+            const wind = document.querySelector('.weather-details .wind span');
 
             switch (json.weather[0].main) {
                 case 'Clear':

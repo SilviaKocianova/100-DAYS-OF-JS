@@ -258,7 +258,7 @@ example: html file: <p>This is a <span class="highlight">highlighted</span> word
 }
 
 
-.fade-in { 
+.fadeIn { 
     animation: 0.5s fadeIn forwards;
     animation-delay: 0.5s;
 
