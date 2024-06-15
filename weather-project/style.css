@@ -1,3 +1,5 @@
+/*GENERAL*/
+
 *{
     margin: 0;
     padding: 0;
@@ -14,6 +16,8 @@ body {
     background: orange;
 }
 
+/*CONTANER*/
+
 .container {
     position: relative;
     width: 400px;
@@ -26,6 +30,9 @@ body {
     transition: 0.6s ease-out;
 
 }
+
+
+/*SEARCH BOX*/
 
 .search-box {
     width: 100%;
@@ -81,4 +88,190 @@ body {
     color:coral;
     font-size: 28px;
 
+}
+
+
+
+
+/*WEATHER BOX*/
+
+
+
+.weather-box {
+    text-align:center;
+
+}
+
+
+.weather-box img {
+    width: 30%;
+    margin-top: 30px;
+
+}
+
+
+.weather-box .temperature {
+    position: relative;
+    color:rgb(202, 115, 0);
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-left: -16px;
+
+}
+
+
+.weather-box .temperature span {
+    position: absolute;
+    margin-left: 4px;
+    font-size: 1.5rem;
+
+}
+
+
+
+.weather-box .description {
+    color:rgb(202, 115, 0);
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+    
+}
+
+
+.weather-details {
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+}
+
+.weather-details .humidity, .weather-details .wind {
+
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100px;
+
+}
+
+
+.weather-details .humidity {
+    padding-left: 20px;
+    justify-content: flex-start;
+
+}
+
+
+.weather-details .wind {
+
+    padding-right: 20px;
+    justify-content: flex-end;
+
+}
+
+
+
+/*CODE "i" BELOW EXPLAINED: any CSS rules applied to .weather-details i will affect the <i> element.
+<div class="weather-details">
+  <i class="icon-sunny"></i>
+  <p>Sunny with a chance of clouds</p>
+</div>
+*/
+
+
+.weather-details i {
+    color: coral;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-top: 6px;
+
+
+}
+
+
+
+
+/*SPAN =  Unlike block-level elements (like <div>), <span> does not create a new line and does not have any default styling;
+it's primarily used for applying styles or adding attributes to a small portion of content within a larger block of text or other inline elements.
+
+example: html file: <p>This is a <span class="highlight">highlighted</span> word in a sentence.</p>
+
+        css file: .highlight {
+                    background-color: yellow;
+                    font-weight: bold;
+                    }
+
+        result: This CSS rule will make the background of the word "highlighted" yellow and its font weight bold,
+                without affecting the rest of the paragraph. */
+
+
+
+
+.weather-details span {
+    color: coral;
+    font-size: 22px;
+    font-weight: 500;
+    
+}
+
+.weather-details p {
+    color: coral;
+    font-size: 14px;
+    font-weight: 500;
+
+
+}
+
+
+.not-found {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    scale: 0;
+    opacity: 0;
+    display: none;
+
+}
+
+
+.not-found img {
+
+    width: 70%;
+}
+
+
+.not-found p {
+    color: coral;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 12px;
+
+}
+
+
+.weather-box, .weather-details {
+    scale: 0;
+    opacity: 0;
+    
+}
+
+
+.fade-in { 
+    animation: 0.5s fadeIn forwards;
+    animation-delay: 0.5s;
+
+}
+
+
+
+
+
+@keyframes fadeIn {
+    to {
+        scale: 1;
+        opacity: 1;
+
+    }
 }
