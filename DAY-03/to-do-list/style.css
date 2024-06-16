@@ -72,3 +72,64 @@ button {
     cursor: pointer;
     border-radius: 40px;
 }
+
+
+
+ul li {
+    list-style:none;
+    font-size:17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+
+}
+
+
+
+ul li.checked {
+    color: #38598b;
+    text-decoration: line-through;
+
+}
+
+
+
+ul li.checked::before {
+    color: #38598b;
+    text-decoration: line-through;
+    background-image: url(images/checked.png);
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #38598b;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+
+ul li span:hover {
+    background: #79c2d0;
+
+}
