@@ -15,7 +15,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate (-50%, -50%);
+    transform: translate(-50%, -50%);
     background: #fff;
     border-radius: 10px;
 }
@@ -73,23 +73,23 @@ body {
 }
 
 .error {
-    animation: shake 0,1s linear 10;
+    animation: shake 0.1s linear 10;
 }
 
 @keyframes shake {
     0% {
         transform: translateX(0);
-    };
+    }
     25% {
         transform: translateX(-2px);
-    };
+    }
     50% {
         transform: translateX(0);
-    };
+    }
     75% {
         transform: translateX(2px);
-    };
+    }
     100% {
         transform: translateX(0);
-    };
+    }
 }
