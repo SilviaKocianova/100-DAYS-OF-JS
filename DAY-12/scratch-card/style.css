@@ -59,4 +59,8 @@ body {
 #scratch{
     border: 1px solid black;
     -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+    
 }
