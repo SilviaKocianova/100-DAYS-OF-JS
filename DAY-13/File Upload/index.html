@@ -54,7 +54,10 @@
     </div>
 
     <script>
-        Array.prototype.forEach.call(document.querySelectorAll('.file-upload__button'))
+        Array.prototype.forEach.call(document.querySelectorAll('.file-upload__button')), function (button) {
+            const hiddenInput = button.parentElement.querySelector('file.upload__input');
+            const label = button.parentElement.querySelector('file.upload__label');
+        }
     </script>
 </body>
 </html>
