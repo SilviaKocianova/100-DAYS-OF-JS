@@ -128,7 +128,30 @@ ul li {
     flex: 1;
 }
 
+.name h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
 
+}
+
+.name p {
+    font-size: 0.8rem;
+    color: #555;
+}
+
+.amount {
+    font-weight: 600;
+
+}
+
+.amount.income {
+    color: yellowgreen;
+}
+
+.amount.expense {
+    color: indianred;
+}
 
 #status {
     text-align: center;

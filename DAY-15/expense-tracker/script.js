@@ -39,8 +39,8 @@ function renderList() {
         return;
     }
 
-    transactions.forEach((transaction) => {
-        const li = document.createElement('li');
+    transactions.forEach(({ id, name, amount, date, type}) => {
+        const li = document.createElement("li");
 
         li.innerHTML = `
             <div class="name">
@@ -48,7 +48,7 @@ function renderList() {
                 <p>${new Date(transaction.date).toLocaleDateString()}</p>
             </div>
 
-            <div class="amount">
+            <div class="amount ${type}">
                 <span>${formatter.format(transaction.amount)}</span>
             </div>
         `;
