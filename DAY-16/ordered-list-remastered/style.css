@@ -4,7 +4,7 @@
     background-color: darkslategrey;
     margin: 0;
     padding: 0;
-    font-family: 'Ubuntu', sans-serif; /* Corrected font-family */
+    font-family: 'Ubuntu', sans-serif;
 }
 
 h1 {
@@ -22,7 +22,7 @@ ul.list {
     text-align: center;
     color: white;
     font-size: 18px;
-    background-color: transparent; /* Ensure no background for ul */
+    background-color: transparent;
     list-style:outside;
 }
 
