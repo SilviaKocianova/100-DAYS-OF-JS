@@ -10,13 +10,25 @@
     <h1>Ordered List</h1>
     <div class="square">
         <ul class="list">
-            <li>item</li>
-            <li>item</li>
-            <li>item</li>
-            <li>item</li>
-            <li>item</li>
-            <li>item</li>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
         </ul>
     </div>
+    <button class="manage-button" onclick="showManageWindow()">Manage</button>
+    
+    <!-- Modal/Overlay for managing the list -->
+    <div id="manage-window" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeManageWindow()">&times;</span>
+            <h2>Manage List</h2>
+            <ul id="manage-list" class="list"></ul>
+            <input type="text" id="new-item-input" placeholder="Enter new item">
+            <button onclick="addItem()">Add Item</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
